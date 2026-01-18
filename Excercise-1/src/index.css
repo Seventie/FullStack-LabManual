@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body {
+        @apply bg-black text-white;
+        font-family: 'Inter', sans-serif;
+    }
+    h1,
+    h2,
+    h3 {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+     ::selection {
+        @apply bg-white text-black;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
